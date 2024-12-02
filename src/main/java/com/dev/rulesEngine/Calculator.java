@@ -8,9 +8,9 @@ public class Calculator {
 	//instantiate the broker address and port
     private static final String BROKER = "tcp://test.mosquitto.org:1883";
     //Define the topic for incoming messages
-    private static final String INPUT_TOPIC = "BRE/calculateWinterSupplementInput/#";
+    private static final String INPUT_TOPIC = "BRE/calculateWinterSupplementInput/a3db6375-ee19-456e-a087-72d8a0d6990f";
     //Define the topic to publish
-    private static final String OUTPUT_TOPIC_BASE = "BRE/calculateWinterSupplementOutput/";
+    private static final String OUTPUT_TOPIC_BASE = "BRE/calculateWinterSupplementOutput/a3db6375-ee19-456e-a087-72d8a0d6990f";
 
     public static void main(String[] args) throws MqttException {
     	//connect the client to mqtt broker which generates an ID for the client
@@ -57,7 +57,7 @@ public class Calculator {
         }
     }
 
-    private static JsonObject processInput(JsonObject pay) {
+    public static JsonObject processInput(JsonObject pay) {
     	//determines eligibilty based on user input
         boolean isEligible = pay.get("familyUnitInPayForDecember").getAsBoolean();
         //gets the composition of the family

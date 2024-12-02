@@ -20,6 +20,9 @@ The features of the appplication include:
 1. Go to the Winter Supplement Calculator web app
 2. Copy the MQTT topic ID
 3. Put the ID in the INPUT_TOPIC and OUTPUT_TOPIC
+4. Run the engine
+5. Publish a message in the input topic
+6. Subscribe to view the results
 
 **UNIT TESTING**
 1. Add the JUnit dependency to the pom.xml file

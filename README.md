@@ -1,4 +1,4 @@
-3WINTER SUPPLEMENT CALCULATOR
+WINTER SUPPLEMENT CALCULATOR
 This repository contains the application that calculates the amount a person or family is entitled to based on some defined business rules and eligibility.
 
 **FEATURES**
